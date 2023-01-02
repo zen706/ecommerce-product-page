@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Kumbh+Sans:wght@400;700&family=Open+Sans:wght@300;400;700&family=Overpass:wght@400;700&family=Red+Hat+Text:wght@400;700&family=Roboto:wght@100;400;700;900&family=Rubik:wght@400;500;700&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- aside -->
+    <aside class="aside">
+      <div class="aside-wrapper">
+        <div class="times"><i class="bi bi-x"></i></div>
+        <div class="prev"><i class="bi bi-chevron-left"></i></div>
+        <div class="next"><i class="bi bi-chevron-right"></i></div>
+        <div class="aside-images">
+          <img
+            src="./images/image-product-1.jpg"
+            alt=""
+            class="aside-image-big"
+          />
+          <div class="thumnails">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="thumnail"
+              data-id="1"
+            />
+            <img
+              src="./images/image-product-2-thumbnail.jpg"
+              alt="thumnail"
+              data-id="2"
+            />
+            <img
+              src="./images/image-product-3-thumbnail.jpg"
+              alt="thumnail"
+              data-id="3"
+            />
+            <img
+              src="./images/image-product-4-thumbnail.jpg"
+              alt="thumnail"
+              data-id="4"
+            />
+          </div>
+        </div>
+      </div>
+    </aside>
+    <!-- sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-wrapper">
+        <i class="bi bi-x"></i>
+        <ul class="sidebar-links">
+          <a href="#"><li class="sidebar-link">Collections</li></a>
+          <a href="#"><li class="sidebar-link">Men</li></a>
+          <a href="#"><li class="sidebar-link">Women</li></a>
+          <a href="#"><li class="sidebar-link">About</li></a>
+          <a href="#"><li class="sidebar-link">Contact</li></a>
+        </ul>
+      </div>
+    </aside>
+    <!-- cart -->
+    <aside class="cart">
+      <h3>Cart</h3>
+      <div class="cart-info">
+        <p class="empty">Your cart is empty.</p>
+        <ul class="items"></ul>
+        <button class="btn checkout-btn">checkout</button>
+      </div>
+    </aside>
+    <div class="container">
+      <!-- nav -->
+      <nav>
+        <div class="nav-left">
+          <i class="bi bi-list menu"></i>
+          <img src="./images/logo.svg" alt="logo" />
+          <ul class="links">
+            <li class="link">Collections</li>
+            <li class="link">Men</li>
+            <li class="link">Women</li>
+            <li class="link">About</li>
+            <li class="link">Contact</li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <div class="cart-box">
+            <div class="cart-count">0</div>
+            <div class="dummy">0</div>
+            <img src="./images/icon-cart.svg" alt="cart" />
+          </div>
+          <img src="./images/image-avatar.png" alt="avatar" class="avatar"/>
+        </div>
+        <div class="underline"></div>
+      </nav>
+      <div class="horizon"></div>
+      <!-- sction -->
+      <section>
+        <div class="mobile-image">
+          <div class="prev mobile-prev">
+            <img src="./images/icon-previous.svg" alt="" />
+          </div>
+          <div class="next mobile-next">
+            <img src="./images/icon-next.svg" alt="" />
+          </div>
+        </div>
+        <div class="images">
+          <img src="./images/image-product-1.jpg" alt="" class="image-big" />
+          <div class="thumnails">
+            <img
+              src="./images/image-product-1-thumbnail.jpg"
+              alt="thumnail"
+              data-id="1"
+              class="hold"
+            />
+            <img
+              src="./images/image-product-2-thumbnail.jpg"
+              alt="thumnail"
+              data-id="2"
+            />
+            <img
+              src="./images/image-product-3-thumbnail.jpg"
+              alt="thumnail"
+              data-id="3"
+            />
+            <img
+              src="./images/image-product-4-thumbnail.jpg"
+              alt="thumnail"
+              data-id="4"
+            />
+          </div>
+        </div>
+        <div class="info">
+          <h3>Sneaker Company</h3>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p class="desc">
+            These low-profile sneakers are your perfect casual wear companion.
+            Featuring a durable rubber outer sole, they’ll withstand everything
+            the weather can offer.
+          </p>
+          <div class="price-container">
+            <p class="price">$125.00 <span class="price-off">50%</span></p>
+            <p class="pre-price">$250.00</p>
+          </div>
+          <div class="select">
+            <div class="quantity-container">
+              <img src="./images/icon-minus.svg" alt="minus" / class="minus">
+              <span class="quantity">0</span
+              ><img src="./images/icon-plus.svg" alt="plus" class="plus" />
+            </div>
+            <button class="btn add-btn">
+              <i class="bi bi-cart"></i>Add to cart
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/IsTaro">Zen</a>.
+    </footer> -->
+  </body>
+  <script src="./app.js"></script>
+</html>
